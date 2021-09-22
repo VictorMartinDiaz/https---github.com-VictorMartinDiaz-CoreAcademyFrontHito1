@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="header"></div>
+        <div id="formWrapper">
+            <div id="tableHeader" class="header">ToDo List</div>
+            <form id="innerForm" action="" method="POST">
+                <div id="inputElem">
+                    <label id="inputLabel" for="">Add a new task
+                        <div id="newTask">
+                            <input id="taskText" type="text" name="newTask" />
+                        </div>
+                    </label>
+                    <button id="inputButton">Add TO-DO</button>
+                </div>
+
+                <div id="firstChild" class="listElem">
+                    <input type="checkbox" class="checkbox" /><label>Hello</label>
+                    <button class="xButton">X</button>
+                </div>
+                <div class="listElem">
+                    <input type="checkbox" class="checkbox" checked="checked"/><label>Test</label>
+                    <button class="xButton">X</button>
+                </div>
+                <button id="deleteButton">Delete Selected</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
