@@ -14,7 +14,7 @@
 
 .header {
     width: 100%;
-    height: 60px;
+    height: 75px;
     background-color: var(--primary-color);
 }
 
@@ -89,8 +89,10 @@
 
 .listElem{
     align-self: center;
+    align-items: center;
     display: grid;
     grid-template-columns: 10% 65% 25%;
+    font: 20px Arial, sans-serif;
 }
 
 #firstChild{
@@ -124,4 +126,5 @@
     border-radius: 5px;
     font: 15px Arial, sans-serif;
     margin-bottom: 5%;
+    border: none;
 }
