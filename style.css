@@ -1,6 +1,6 @@
 * {
     --primary-color: rgb(32, 63, 88);
-    --secondary-color: rgb(247, 132, 38);
+    --secondary-color: rgb(209, 108, 14);
 }
 
 #wrapper {
@@ -102,8 +102,9 @@
 
 /* change color */
 .checkbox {
-    height: 15px;
-    width: 15px;
+    height: 17px;
+    width: 17px;
+    accent-color: var(--secondary-color);
 }
 
 .xButton{
