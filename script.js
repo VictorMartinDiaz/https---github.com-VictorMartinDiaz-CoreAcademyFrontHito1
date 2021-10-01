@@ -50,9 +50,25 @@ function finisedTaskMark(elem) {
 
 function switchDarkMode(){
     let wrapper = document.getElementById('wrapper');
+    let header = document.getElementById('header');
+    let tableHeader = document.getElementById('tableHeader');
     
-    if(wrapper.classList.contains('wrapperDarkMode'))
+    if(wrapper.classList.contains('wrapperDarkMode')){
         wrapper.classList.remove('wrapperDarkMode');
-    else 
+        document.getElementById('inputLabel').setAttribute('style', 'color:gray;');
+    }
+    else{
         wrapper.classList.add('wrapperDarkMode');
+        document.getElementById('inputLabel').setAttribute('style', 'color:white;');
+    }
+
+    // if(header.classList.contains('headerDarkMode'))
+    //     header.classList.remove('headerDarkMode');
+    // else
+    //     header.classList.add('headerDarkMode');
+
+    // if(tableHeader.classList.contains('headerDarkMode'))
+    //     tableHeader.classList.remove('headerDarkMode');
+    // else
+    //     tableHeader.classList.add('wrapperDarkMode');
 }
