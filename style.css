@@ -32,6 +32,11 @@
     background-color: var(--primary-color);
 }
 
+.headerDarkMode{
+    background-color: rgb(200, 170, 65);
+    color: rgb(0, 5, 30);
+}
+
 #formWrapper {
     /* overflow: scroll; */
     align-self: center;
@@ -104,7 +109,7 @@
 }
 
 #list {
-    overflow-y: scroll;
+    overflow-y: auto;
     position: relative;
     top: -25px;
     max-height: 50%;
