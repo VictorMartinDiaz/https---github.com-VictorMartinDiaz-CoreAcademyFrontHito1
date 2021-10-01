@@ -52,6 +52,8 @@ function switchDarkMode(){
     let wrapper = document.getElementById('wrapper');
     let header = document.getElementById('header');
     let tableHeader = document.getElementById('tableHeader');
+    let inputButton = document.getElementById('inputButton');
+    let taskText = document.getElementById('taskText');
     
     if(wrapper.classList.contains('wrapperDarkMode')){
         wrapper.classList.remove('wrapperDarkMode');
@@ -62,13 +64,34 @@ function switchDarkMode(){
         document.getElementById('inputLabel').setAttribute('style', 'color:white;');
     }
 
-    // if(header.classList.contains('headerDarkMode'))
-    //     header.classList.remove('headerDarkMode');
-    // else
-    //     header.classList.add('headerDarkMode');
+    if(header.classList.contains('headerDarkMode')){
+        header.classList.remove('headerDarkMode');
+    }
+    else{
+        header.classList.add('headerDarkMode');
+    }
+    
+    if(tableHeader.classList.contains('headerDarkMode')){
+        tableHeader.classList.remove('headerDarkMode');
+        tableHeader.setAttribute('style', 'color:white;');
+    }
+    else{
+        tableHeader.classList.add('headerDarkMode');
+    }
 
-    // if(tableHeader.classList.contains('headerDarkMode'))
-    //     tableHeader.classList.remove('headerDarkMode');
-    // else
-    //     tableHeader.classList.add('wrapperDarkMode');
+    if(taskText.classList.contains('taskTextDarkMode')){
+        taskText.classList.remove('taskTextDarkMode');
+    }
+    else{
+        taskText.classList.add('taskTextDarkMode');
+    }
+
+    if(inputButton.classList.contains('headerDarkMode')){
+        inputButton.classList.remove('headerDarkMode');
+        inputButton.classList.add('inputButton');
+    }
+    else{
+        inputButton.classList.add('headerDarkMode');
+        inputButton.classList.remove('inputButton');
+    }
 }
