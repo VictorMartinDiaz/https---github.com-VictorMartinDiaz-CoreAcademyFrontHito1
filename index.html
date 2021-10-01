@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Formulario</title>
 </head>
 <body>
     <div id="wrapper">
+        <button id="contrastButton" type="button" onclick="switchDarkMode()"><img src="./contrast-outline.svg" /></button>
         <div class="header"></div>
         <div id="formWrapper">
             <div id="tableHeader" class="header">ToDo List</div>
-            <form id="innerForm" action="" method="POST">
+            <form id="innerForm" action="" method="">
                 <div id="inputElem">
                     <label id="inputLabel" for="">Add a new task
                         <div id="newTask">
                             <input id="taskText" type="text" name="newTask" />
                         </div>
                     </label>
-                    <button id="inputButton">Add TO-DO</button>
+                    <button id="inputButton" type="button" onclick="addTask()">Add TO-DO</button>
                 </div>
-
-                <div id="firstChild" class="listElem">
-                    <input type="checkbox" class="checkbox" /><label>Hello</label>
-                    <button class="xButton">X</button>
+                <div id="list">
+                    <div class="elem notLastChild">
+                        <input type="checkbox" class="checkbox" onclick="finisedTaskMark(this.parentElement)"/><label>Hello</label>
+                        <button class="xButton" type="button" onclick="deleteTask(this.parentElement)">X</button>
+                    </div>
+                    <div class="elem">
+                        <input type="checkbox" class="checkbox" onclick="finisedTaskMark(this.parentElement)"/><label>Test</label>
+                        <button class="xButton" type="button" onclick="deleteTask(this.parentElement)">X</button>
+                    </div>
                 </div>
-                <div class="listElem">
-                    <input type="checkbox" class="checkbox" checked="checked"/><label>Test</label>
-                    <button class="xButton">X</button>
-                </div>
+                
                 <button id="deleteButton">Delete Selected</button>
             </form>
         </div>
